@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Galeria</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Fotos</h1>
+        <br>
+        <!--Em um projeto podemos ter uma hirarquia de pastas, como uma pasta só pras imagens e outra só para os códigos-->
+        <!--Para acessar o diretorio correto, podemos colocar o nome da pasta/imgem ou um ./ que fará referenciao ao diretorio atual-->
+        <!--Caso o arquivo ou imagem q estamos querendo acessar estiver fora do dominio atual, com o ../ acessamos esse nivel acima(fora) do diretorio atual-->
+        <!--Não tem problema ter mais de um arquivo index em um projeto se eles estiverem em pastas diferentes, pois com essa manipulção hierarquica conseguimos direcionar corretamente-->
+        <img alt="Imagem tech" src="imagens/tech.jpeg" height="500" width="500">
+        <br>
+        <img alt="Imagem tech" src="./imagens/tech.jpeg" height="500" width="500">
+    </body>
+</html>
