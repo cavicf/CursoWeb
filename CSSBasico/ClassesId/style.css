@@ -1,0 +1,16 @@
+/* dentro do style fazemos igual no interno, definindo os elementos que queremos modificar e passamos os valores */
+p{
+    color: red;
+    background-color: yellow;
+}
+
+/* Para alterar o estilo de uma tag com id, utilizamos o seletor # com o nome do id */
+#paragrafo1{
+    color: blueviolet;
+    background-color: aquamarine;
+}
+
+/* Para alterar o estilo de um tag com classe, utilizamos o seletor . com o nome do id */
+.fundo-azul{
+    background-color: blue;
+}
