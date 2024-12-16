@@ -1,0 +1,5 @@
+/* dentro do style fazemos igual no interno, definindo os elementos que queremos modificar e passamos os valores */
+p{
+    color: red;
+    background-color: yellow;
+}
