@@ -1,0 +1,14 @@
+#paragrafo1{
+    /* Podemos definir as cores atraves do rgb pra termos uma cor mais específica e uma cartela maior de cores */
+    /* Passamos cada valor da escala das cores por vez, para criar uma mistura de cores */
+    /* Alem dos valores por rgb, também podemos passar o código das cores em hexadecimal com o # */
+    color: #fff;
+    background-color: rgb(255, 100, 0);
+}
+
+/* Alem de colocar as cores comuns, temos o rgba que pode controlar a opacidade das cores, ou seja, a transparência delas */
+/* Esse valor vai de 0 a 1, sendo o 1 o maximo da cor e 0 transparente total, mas pode passar em hexadecimal tbm */
+p{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 0, 255, 0.5);
+}
