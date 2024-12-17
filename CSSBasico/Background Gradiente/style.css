@@ -1,0 +1,6 @@
+.verde{
+    height: 100px;
+    /* O background linear gradient nos possibilita criar degrades entre cores, passando também a direção onde essa transição de cores ocorrerá
+    Pode-se passar também em que ponto a transição de uma cor pra outra começa a ocorrer, assim como a quantidade que essa cor ocupará */
+    background: linear-gradient(to right,red,20%, blue);
+}
