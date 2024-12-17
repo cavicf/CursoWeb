@@ -1,0 +1,22 @@
+div{
+    width: 500px;
+    height: 300px;
+    /* Os estilos de background podem ser colocados todos de uma vez no comando background, separados por um espaço, exceto o size */
+    background: rgb(240,100 0) url('./Images/BackgroundImage.png') no-repeat fixed right;
+    background-size: cover;
+    /* background-color: rgb(240,100 0); O color muda a cor de fundo
+    background-image: url('./Images/BackgroundImage.png'); o image + url coloca uma imagem de fundo
+    background-size: contain; o size altera o tamanho da imagem, se ela irá preencher tudo ou não
+    background-repeat: no-repeat; O repeat altera o padrão de repetição das imagens 
+    background-position: top right;  O position altera a posição na qual a imagem se encfontra, podendo colocar centro, baixo, direita etc*/ 
+}
+
+
+p{
+    width: 300px;
+    background-color: aquamarine;
+    background-image: url('./Images/Fundo_abstrato.jpg');
+    /* O attachment define como a imagem se comportará na movimentação, o fixo cria um efeito legal de que a imagem n se mexe com a rolagem */
+    background-attachment:  fixed;
+    background-size: cover;
+}
