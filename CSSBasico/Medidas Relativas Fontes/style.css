@@ -1,0 +1,24 @@
+.container{
+    /* Ao alterarmos o tamanho da fonte no elemento pai, alteramos todos os textos existentes no elemento pai, mas se alterarmos na classe especifica, a especificidade é respeitada */
+    font-size: 60px;
+}
+
+.exemplo1{
+    /* Aqui o elemento está dentro do container(elemento pai) mas como estamo alterando especificamente a classe do texto, então ela será alterada devido a especificidade */
+    font-size: 20px;
+}
+
+.exemplo2{
+    /* O em é relativo ao tamanho padrao do elemento, ou seja, nesse caso estamos falando pra dobrar o tamanho padrão q ele deveria ter */
+    font-size: 2em;
+}
+
+.exemplo3{
+    /* O em é relativo ao tamanho raiz ou seja ao tamanho padrão do html, então aqui estamos falando q ele será o dobro do tamanho raiz */
+    font-size: 2rem;
+}
+
+/* Podemos alterar o tamanho padrão(raiz) da fonte passando o tamanho ao elemento html todo */
+html{
+    font-size: 20px;
+}
