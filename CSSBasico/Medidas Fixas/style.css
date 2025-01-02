@@ -1,0 +1,19 @@
+/* Temos várias unidades de medidas se trantando do css, a mais utilizada é o pixel (px), entretanto temos outras:
+Essas unidades de medida são utilizadas para quaisquer atributos que possam alterar tamanhos, como font-size por exemplo
+cm = Centimetros
+mm = milimetros
+in - Polegadas(1 in = 96px = 2.54cm)
+px - Pixels (1 px = 1/96th de 1 in)
+pt - Pontos (1 pt = 1/72 de 1 in)
+pc - Picas (1 pc = 12 pt) */
+
+#fotobastidor{
+    width: 500px;
+}
+
+#azul{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    font-size: 100px;
+}
