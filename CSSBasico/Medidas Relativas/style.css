@@ -1,0 +1,20 @@
+
+#azul{
+    /* Outra unidade de medida relativa é o vh(altura) e vw(largura) que são relativos ao tamanho da tela e janela, ou seja, geram responsividade de tamanho ao mexermos no tamanho da tela */
+    background-color: blue;
+    width: 50vw;
+    height: 50vh;
+}
+
+#vermelho{
+    background-color: red;
+    width: 500px;
+    height: 300px;
+}
+
+.foto{
+    /* Ao passar uma unidade relativa como a % ela será aplicada relativa ao elemento pai dela, que aqui no caso é a div que a imagem está dentro 
+    Mas caso for passada uma unidade relativa a div por exemplo, o elemento pai será o body, ou seja, será alterada em relação ao tamanho do body
+    */
+    width: 50%;
+}
