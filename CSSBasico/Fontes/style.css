@@ -1,0 +1,23 @@
+/* Quando se trata de fontes em css, temos familias de fontes padrões que os navegadores conseguem carregar
+As principais são as fontes com serifa, sem serifa e monospace. As demias são variantes estilizadas dessas 3
+Podemos definir varias familias de fonte que serão carregadas respectivamente pelo navegador, ou seja, caso o navegador por algum motivo não consiga carregar a primeira da lista, ele vai tentar a segunda e assim por diante.
+Obs: caso o nome da fonte possua mais de um palavra, escreva ela normalmente entre aspas duplas. */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Existem muitas propriedades que fazem alterções no estilo em que as fontes são apresentadas ao usuário, abaixo seguem algumas das mais utilizadas: */
+p{
+    font-family: 'Courier New', Courier, monospace;
+    /* O font style consegue colocar as palavras em italico ou demais variações */
+    font-style:italic;
+
+    /* O font size serve para mudarmos o tamanho da fonte, podendo ser passado em pixels como se estivessemos no word */
+    font-size: 20px;
+
+    /* O font weight serve para detrminar o peso da fonte, ou seja, o quanto ela será escura ou negrita. Os valores variam de  0 a 1000 mas geralmente são passados em escalas de 100. */
+    font-weight: 400;
+
+    /* O font variant tem uma propriedade chamada small caps que coloca todas as letras em maiusculo, entretanto, mantém as maíusculas originais sendo elas um pouco maior que as demais. */
+    font-variant: small-caps;
+}
