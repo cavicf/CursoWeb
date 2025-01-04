@@ -1,0 +1,17 @@
+/* Com a fonte importadada no html, agora podemos utiliza-la no css atraves do font family e o nome da mesma: */
+h1{
+    font-family: "Meow Script", serif;
+}
+
+/* Agora caso queiramos utilizar fontes baixadas, devemos criar um diretorio para elas na pasta do projeto, e importa-las no css através do comando font face da seguinte forma: */
+
+@font-face {
+    font-family: "MinhaFonte";
+    src: url(./fonteBaixada/Merienda-Regular.ttf);
+}
+
+p{
+    font-family: "MinhaFonte";
+}
+
+/* Os formatos suportados são ttf, otf, woff que são as mais comuns */
