@@ -1,0 +1,28 @@
+/* No css podemos alterar os espaçãmentos que algumas coisas possuem com o margin e paddin.
+O margin se trata do espaçamento da borda pra fora, enquanto o padding se trata do espaçãmento da borda pra dentro. Esses espaçamentos podem ser aplicados tanto em divs quanto em paragrafos.
+Os valores são geralmente passados em pixels e podemos seguir a regra de ordem topo, direita, baixo e esquerda e passar os valores de uma só vez */
+
+#primeira{
+    height: 100px;
+    background-color: blue;
+    margin-left: 10px;
+}
+
+#segunda{
+    height: 100px;
+    background-color: red;
+    border: 10px solid blue;
+    margin: 20px;
+    padding: 100px;
+    padding-right: 300px;
+}
+
+#terceira{
+    height: 100px;
+    background-color: green;
+    margin-top: 10px;
+}
+
+p{
+    margin: 0;
+}
