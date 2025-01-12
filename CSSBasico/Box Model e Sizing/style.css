@@ -1,0 +1,25 @@
+#primeira{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    /* É muito comum adicionarmos paddings em elementos que ja possuem um tamanho limitado como o caso dessa div que possui height e width definidos. Mas ao adicionar o padding ou uma borda com o border, o efeito é acumulativo, ou seja a expessura dessas propriedades serão somadas ao tamanho definido do elemento, o que gera um problema. */
+
+    /* Para que isso seja resolvido, ou seja, adicionar o padding ou a borda sem que ocorra uma alteração no tamanho predefinido, utilizamos a propriedade box sizing: border-box, que manterá as proporções originais com a adição das modificações */
+    padding: 20px;
+    border: 10px solid black;
+    box-sizing: border-box;
+    color: white;
+}
+
+#segunda{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+/* Geralmente definimos o margin e padding do body como 0 para que tenhamos total e livre controle sobre posicionamento e dimencionamento de elementos como divs */
+body{
+    margin: 0;
+    padding: 0;
+}
