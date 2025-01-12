@@ -1,0 +1,39 @@
+/* Podemos fazer diversas alterações em links, estilando-os até mesmo como se fossem botões. 
+Dentro do CSS existem as chamadas pseudo-classes que alteram determinados estados de um elemento. */
+
+a{
+    background-color: cornflowerblue;
+    color: beige;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* A pseudo-classe visited altera o modo de apresentação de um link que ja foi visitado */
+a:visited{
+    background-color: blueviolet;
+}
+
+/* A pseudo-classe hover altera o estado de quando o elemento está sendo coberto, ou seja, quando estamos com o cursor sobre ele */
+a:hover{
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+/* Ja o active altera o estado de quando o elemento esta ativo, ou seja, quando ocorre uma ação sobre ele, neste caso o clique. */
+a:active{
+    background-color: #444;
+}
+
+/* Não são todas as propriedades que podem ser alteradas nestes estados das pseudo-classes, como por exemplo, o padding do hover que adicionamos pode não funcionar em todos os navegadores. A seguir são algumas propriedades que podem ser alteradas:
+color,
+background-color,
+border-color,
+border-bottom-color,
+border-left-color,
+border-right-color,
+border-top-color,
+column-rule-color,
+outline-color,
+text-decoration-color,
+text-emphasis-color */
