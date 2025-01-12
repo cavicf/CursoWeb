@@ -1,0 +1,23 @@
+/* Quando temos elementos html que naturalmente por padrão tendem a ocupar a tela toda, podemos centralizá-los e posicioná-los com o margin auto, que vai ocupar o máximo possivel de espaço que conseguir na horizontaç e o minimo possivel na vertical, centralizando aquele elemento. Ex: div, paragrafos, etc */
+
+/* CUIDADO: o espaço que o margin ocupa quando definimos o margin left ou right especifacamente quer dizer o maximo de espaço vazio que ele vai dar naquela direção. Ou seja, se damos margin-left: auto, isso fará com que o espaço vazio na esquerda será o maior possivel, jogando o elemento para a direita e vice-versa */
+
+#minhaDiv{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-color: blue;
+
+}
+
+p{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Já se o elemento não ocupa a tela toda naturalmente, como o caso de uma imagem, devemos envolve-la em uma div pai, e usar o text align center para que consigamos centralizar a imagem ou posicionar ela de alguma outra maneira */
+#imagem{
+    background-color: red;
+    text-align: center;
+}
