@@ -1,0 +1,13 @@
+/* Ao termos um elemento pai (uma div) e um elemento filho (o paragrafo), pode acontecer de ocorrer um vazamento ou sobreposição de um elemento sobre o outro. Nesse caso, ao estabelecermos um tamanho pra div, o texto acabou vazando pra fora, quando deveria estar contido dentro da div. 
+
+Para resolver este problema usamos a propriedade overflow que faz com que essa limitação seja respeitada podendo ser definida como hidden(apenas contém), como scroll(contém e permite visualização), pode ser também controlada pelos eixos x e y dependendo da aplicação e também o auto que definirá automaticamente o tipo de scroll mais adaptado */
+.card{
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+
+.lorem{
+    font-size: 20px;
+}
