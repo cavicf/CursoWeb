@@ -1,0 +1,28 @@
+.card{
+    background-color: #eee;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Existem diversos estilos de cursores que podemos utilizar para determinados momentos e contextos utilizando a propriedade cursor, que auxiliam ao usuário a entender melhor do que se trata e como ele deve agir em relação a um elemento */
+
+/* Podemos também colocar nosso proprio cursor de imagem com url mas deve se passar um cursor default, ou seja, um reserva */
+li{
+    background-color: #cceaff;
+    border: 1px solid #5ca8ef;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: url(https://w7.pngwing.com/pngs/255/760/png-transparent-black-location-icon-illustration-computer-icons-adress-miscellaneous-desktop-wallpaper-location.png), pointer;
+}
+
+ol{
+    padding: 30px;
+    list-style: upper-alpha;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
