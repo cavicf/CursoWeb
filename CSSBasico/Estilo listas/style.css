@@ -1,0 +1,32 @@
+/* Existem varias maneiras de estilar listas no css, podendo deixá-las com aparencias totalmente diferentes e brincar com os estilos. */
+
+/* A propriedade list-style altera o marcador da lista, se ele vai ser um disc(bolinha preta), circle(bolinha sem pintar), square(quadradinho), none(nada) */
+
+/* já o list-style-image nos permite colocar a imagem que quisermos como marcador, preferencialmente a imagem deve ter 16px, junto da url do caminho onde a imagem esta */
+
+ul{ 
+
+    /* o list-style-position permite posicionar os marcadores dentro ou fora do elemento da lista */
+    list-style-position: inside;
+    padding: 0;
+}
+
+/* Podemos fazer esse tipo de estilização mais moderna deixando as bordas dos elementos arredondadas e de outra cor */
+li{
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* O list-style de uma lista ordenada permite que troquemos os marcadores para numeros romanos, alfabéticos e muito mais */
+ol{
+    list-style: upper-roman;
+    background-color: #999;
+    padding: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
