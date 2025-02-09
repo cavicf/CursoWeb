@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position</title>
+        <style>
+            .quadrado{
+                width: 100px;
+                height: 100px;
+            }
+            .quadrado-red{
+                background-color: red;
+            }
+
+            .quadrado-blue{
+                background-color: blue;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            /* o position absolute corrige o problema do relative pois ele não é relativo a posição onde o elemento deveria estar, ou seja, os outros elementos não serão afetados ao mover algum outro de lugar, pois seria como se ele nunca estivesse ali, ele será de fato movido totalmente de posição. Há um pequeno problema quando se utiliza o absolute, se vc quiser que ele mude de posição em relação a um elemento pai por exemplo, o elemento pai não pode ter posicionamento static, tem que ser algo diferente para que o absolute obedeça a hierarquia se não ele vai obedecer em relação ao body que seria o elemento "avo". */
+
+            .quadrado-green{
+                background-color: green;
+            }
+            .quadro{
+                width: 500px;
+                height: 400px;
+                border: 1px solid grey;
+                position: relative;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="quadro">
+            <div class="quadrado quadrado-red"></div>
+            <div class="quadrado quadrado-blue"></div>
+            <div class="quadrado quadrado-green"></div>
+        </div>
+    </body>
+</html>
