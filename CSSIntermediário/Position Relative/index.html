@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position</title>
+        <style>
+            .quadrado{
+                width: 100px;
+                height: 100px;
+            }
+            .quadrado-red{
+                background-color: red;
+            }
+
+/* o position static faz com que todo elemento display block se encaixe um embaixo do outro e display inline um ao lado do outro. É o padrão.
+ja o display relative seria o relativo ao static, ou seja, ele permite que troquemos a posição com propriedades left, top etc mas relativo a posição
+onde ele estava no static
+importante lembrar que ao movimentar seria como se estivesse colocando um espaço aquela direção especifica, ou seja, o top iria descer o elemento, etc
+esse posicionamento traz alguns problemas pois por ele ser relativo a posição que ele deveria estar, ele acaba interferindo na posição de outros
+elementos fazendo eles ficarem flutuando perdidos na tela, fazendo com que a ordem a qual eles são declarados no html importe */
+
+            .quadrado-blue{
+                background-color: blue;
+                position: relative;
+                bottom: 20px;
+            }
+            .quadrado-green{
+                background-color: green;
+            }
+            .quadro{
+                width: 500px;
+                height: 400px;
+                border: 1px solid grey;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="quadro">
+            <div class="quadrado quadrado-red"></div>
+            <div class="quadrado quadrado-blue"></div>
+            <div class="quadrado quadrado-green"></div>
+        </div>
+    </body>
+</html>
