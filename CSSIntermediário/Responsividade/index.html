@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, intial-scale=1.0">
+        <title>minha pagina</title>
+
+        <style type="text/css">
+            body{
+                font-size: 1.2rem;
+            }
+
+            .header{
+                position: relative;
+                background-color: grey;
+                height: 100px;
+                width: 80%;
+                margin: auto;
+            }
+            
+            /* o position absolute com o transform para posicionamentos verticais e horizontais também são recomendado ao utilizar % pois geram responsividade. Para que façamos coisas responsivas, é melhor utilizar unidades de medidas responsivas como % no caso de elementos e vw no caso de textos */
+
+            .content{
+                position: absolute;
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                background-color: blue;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                color: white;
+                text-align: center;
+                font-size: 6vw;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <div class="content">Hello World</div>
+        </div>
+
+    </body>
+</html>
