@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position</title>
+        <style>
+            .quadrado{
+                width: 100px;
+                height: 100px;
+            }
+
+            /* O position sticky faz com que o elemento fique grudado no topo da view port e mesmo com a rolagem ele permanece no topo, a partir do momento que ele chega na posição definida, ele para, fica grudado ali */
+        
+
+            .quadrado-red{
+                background-color: red;
+                width: 100%;
+                position: sticky;
+                top: 0;
+            }
+
+            .quadrado-blue{
+                background-color: blue;
+                left: 300px;
+            }
+
+        
+            .quadrado-green{
+                background-color: green;
+            }
+
+            .quadro{
+                width: 500px;
+                height: 4000px;
+                border: 1px solid grey;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="quadro">
+            <div class="quadrado quadrado-red"></div>
+            <div class="quadrado quadrado-blue"></div>
+            <div class="quadrado quadrado-green"></div>
+        </div>
+    </body>
+</html>
