@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>minha pagina</title>
+        <style type="text/css">
+            body{
+                font-size: 1.2rem;
+            }
+            .card{
+                float: left;
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 2px solid green;
+                text-align: center;
+            }
+            .c1{
+                background-color: red;
+                line-height: 200px;
+            }
+
+            /* geralmente utilizamos o position absolute acompanhado dessa propriedade. Para fazer o alinhamento vertical de elementos, podemos utilizar a propriedade transform em relação ao eixo x e y. Essa propriedade será aplicada ao elemento de fato, ao conteudo, por isso ela precisa da ajuda do position absolute para fazer o alinhamento perfeito */
+
+            .c2{
+                color: white;
+                background-color: blue;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="card">
+            <div class="c1">
+                Igor Oliveira
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="c2">
+                Igor Oliveira
+            </div>
+        </div>
+
+    </body>
+</html>
