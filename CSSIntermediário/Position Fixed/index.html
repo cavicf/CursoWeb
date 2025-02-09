@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position</title>
+        <style>
+            .quadrado{
+                width: 100px;
+                height: 100px;
+            }
+            .quadrado-red{
+                background-color: red;
+            }
+
+            .quadrado-blue{
+                background-color: blue;
+                position: fixed;
+                left: 300px;
+            }
+
+            /* o position fixed funciona da mesma forma que o absolute, entretanto, ele se posicionará em relação ao viewport e caso tenha scroll ele permanecerá fixo onde ele foi colocado. Ele será movido totalmente sem atrapalhar outros elementos assim como no absolute, mas se manterá fixo onde foi colocado. Não obedece hierarquia, será empre em relação ao viewport ou seja ao tamanho da tela apresentado */
+
+            .quadrado-green{
+                background-color: green;
+            }
+            .quadro{
+                width: 500px;
+                height: 4000px;
+                border: 1px solid grey;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="quadro">
+            <div class="quadrado quadrado-red"></div>
+            <div class="quadrado quadrado-blue"></div>
+            <div class="quadrado quadrado-green"></div>
+        </div>
+    </body>
+</html>
