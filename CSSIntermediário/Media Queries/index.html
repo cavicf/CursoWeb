@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .header{
+                overflow: hidden;
+                margin: auto;
+                width: 80%;
+                background-color: #5C57A4;
+                padding: 15px;
+                font-size: 18px;
+            }
+            .menu{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                float: right;
+            }
+
+            li{
+                float: left;
+                color: white;
+                margin-right: 15px;
+            }
+            
+            .logo{
+                float: left;
+                color: white;
+            }
+
+            /* o media querie serve para resolvermos alguns problemas especificos de responsividade, ou quando queremos mudar o comportamento de certas coisas em momentos específicos,como por exemplo, podemos mudar a apresentção com um max width, ou seja, definimos um limite de tamanho pra tela e quando ela atinge aquele limite máximo, por exemplo de 1000px, e passa a ter menos que 1000px, o css vai mudar pra outro comportamento definido no media querie */
+
+            @media screen and (max-width:1000px) {
+               .header{
+                background-color: grey;
+
+               }
+
+               .logo{
+                    float: none;
+                    text-align: center;
+                } 
+
+                .menu{
+                    margin-top: 20px;
+                    float: none;
+                    text-align: center;
+                }
+
+                li{
+                    float: none;
+                    margin-bottom: 5px;
+                    padding: 10px;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo">
+                Logo
+            </div>
+            <ul class="menu">
+                <li>Home</li>
+                <li>cursos</li>
+                <li>Contato</li>
+                <li>Escritórios</li>
+            </ul>
+        </div>
+
+    </body>
+</html>
