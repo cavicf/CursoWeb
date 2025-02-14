@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Select</title>
+    </head>
+    <body>
+
+        <form method="get" action="">
+
+            <!-- o select cria uma dropbox com opções a serem selecionadas, junto das opções passamo valores também para diferencia-las. Se quisermos passar uma opção pré-selecionada como padrão, passamos o selected na opção  -->
+            <!-- Podemos também definir um tamanho máximo de opções a serem mostradas caso hajam muitas, e criar um scroll para manter esteticamente bonito, o atributo no caso é o size e passsamos a quantidade de opções a serem exibidas -->
+             <!-- O atributo multiple nos permite selecionarmos mais de uma opção nessa dropbox -->
+
+            <select name="estado" size="3" multiple>
+
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Sp" selected>São Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Sp" selected>São Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Sp" selected>São Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Sp" selected>São Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Sp" selected>São Paulo</option>
+
+            </select>
+
+            <!-- o tipo submit sempre será pra de fato submeter os formulários, enviar -->
+            <input type="submit">
+        </form>
+
+    </body>
+</html>
