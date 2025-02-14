@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5</title>
+    </head>
+    <body>
+
+        <!-- Com a chegada da versão 5 do HTML algumas novas tags de formulários chegaram com ele e veremos elas abaixo: -->
+
+        <form method="post" action="">
+
+            <!-- a input color abre uma caixa pra selecionar uma cor que ao dar o submit envia o codigo hexadecimal da cor selecionada -->
+            <input type="color" name="cor">
+            <br>
+
+            <!-- Faz um campo de calendário pra selecionar uma data, podemos também definir uma data maxima e uma minima -->
+            <input type="date" name="data" max="2018-12-31">
+            <br>
+
+            <!-- O datetime local é bem parecido com o date, mas ele permite selecionar um horário juntamente das datas -->
+            <input type="datetime-local" name="data" max="2018-12-31">
+            <br>
+
+            <!-- O tipo file permite que façamos um upload de arquivos de nosso computador, mas para utiliza-lo é importante lembrar que o formulario tem q ser do tipo post pois é algo sigiloso -->
+            <input type="file" name="arquivo">
+            <br>
+
+            <!-- O tipo number nos permite selecionar numeros, podemos colocar um valor minimo e maximo criando um intervalo -->
+            <input type="number" name="numero" min="5" max="10">
+            <br>
+
+            <!-- O range cria uma regua com slide onde selecionamos em um interalo tambem, definindo um max e um min, alem disso, podemos definir por padrão um numero selecionado com o value -->
+            <input type="range" name="intervalo" value="6" min="5" max="10">
+            <br>
+
+            <!-- O tel funciona mais visivelmente em celulares pois abre o campo numerico para digitação do telefone -->
+            <input type="tel" name="telefone">
+            <br>
+
+            <!-- Ja o email verifica se de fato o que esta sendo preenchido é um email, ou seja, caso o usuário coloque uma informação que n tenha o @ de emails, será emitido um alerta e ele n permitirá o submit -->
+            <input type="email" name="email">
+            <br>
+
+            <input type="submit">
+
+        </form>
+
+    </body>
+</html>
