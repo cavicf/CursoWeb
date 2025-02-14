@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>minha pagina</title>
+    </head>
+    <body>
+
+        <!-- Formulários fazem uma integração do front com o back-end, ou seja, geralmente proporcionam a interação com o usuário de fato, com pesquisas e muito mais. Existem varios tipos de formularios, como de pesquisa, contatos, emails e muito mais -->
+
+        <!-- quando se usa o metodo get os dados coletados são enviados atraves do endereço
+        ja o post é mais recomendado pois esconde dados sensiveis -->
+        <!-- A action seria onde o formulario irá rodar, onde ele irá ser direcionado, no caso aqui seria no proprio servidor local. Seria onde seria procurado por exemplo, a ação mesmo, como vai agir e passar a requisição -->
+        <form method="post" action="/cadastro">
+
+            <input type="text" name="email">
+            <input type="text" name="nome">
+            <input type="submit">
+
+        </form>
+    </body>
+</html>
