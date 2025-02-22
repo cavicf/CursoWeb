@@ -1,0 +1,177 @@
+/* Quando usamos o * estamos nos referindo a todos os elementos presentes na pagina, nesse caso estamos zerando o margin e padding padrão de todos os elementos */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    background-color: #48C5CE;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.title{
+    font-size: 26px;
+}
+
+section{
+    padding: 20px;
+    background-image: url('../images/people.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formcontainer{
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+    border-radius: 5px;
+}
+
+.mb{
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+p{
+    text-align: justify;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #48C5CE;
+    font-weight: bold;
+}
+
+select{
+    /* O appearance: none retira o estilo padrao do select e permite que criemos o proprio */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 160px;
+}
+
+.description{
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 40px;
+    color: white;
+    text-align: left;
+}
+
+.description p, .description h3{
+    margin-bottom: 20px;
+}
+
+.description h3{
+    font-size: 24px;
+}
+
+@media screen and (max-width:1000px){
+    .title{
+      font-size: 24px;  
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formcontainer{
+        max-width: 530px;
+    }
+
+    .formcontainer h2, .formcontainer p{
+        text-align: center;
+    }
+
+    input, select{
+        text-align: center;
+    }
+
+    .description{
+        max-width: 52%;
+    }
+}
+
+@media screen and (max-width:505px){
+    .title{
+      font-size: 16px;  
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formcontainer{
+        max-width: 300px;
+    }
+
+    .formcontainer h2, .formcontainer p{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    input, select{
+        text-align: center;
+    }    
+    
+    .picture{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .description{
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .description p, .description h3{
+        margin-bottom: 20px;
+    }
+    
+    .description h3{
+        font-size: 24px;
+    }
+}
+
