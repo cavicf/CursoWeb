@@ -7,7 +7,7 @@ for (i=0; i<numero; i++){
 }
 console.log('acabou');
 
-//Já o while começa fazendo a comparação logo de inicio, se ela for verdadeira o bloco é executado e em seguida é acrescentado na variavel de controle. Caso seja falso logo de inicio o bloco nem é executado, mas caso seja falso o bloco é quebrado e a repetição termina.
+//Já o while começa fazendo a comparação logo de inicio, se ela for verdadeira o bloco é executado e em seguida é acrescentado na variavel de controle. Caso seja falso logo de inicio o bloco nem é executado, mas caso acrescente e seja 21 a comparação será falsa e o bloco é quebrado e a repetição termina.
 while (numero < 20){
     console.log('estamos no numero ' + numero);
     numero++;
