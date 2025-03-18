@@ -1,0 +1,5 @@
+var valor = parseFloat(prompt('Digite o valor da compra: '))
+var taxa = parseFloat(prompt('digite a porcentagem da taxa combrada: '))
+var tempo = parseFloat(prompt('Digite o tempo de atraso: '))
+var prestacao = valor + (valor * (taxa/100) * tempo)
+alert('O valor da prestação em atraso é: ' + prestacao)
