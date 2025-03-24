@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function loaded(){ //essa é a função que será acionada assim que a pagina for totalmente carregada, é a partir dela que faremos outras funções e executar outras ações
+            let t = document.getElementById('titulo') //agora só pegaremos o h1 pelo id depois que a pagina for carregada, então ele ja vai existir
+            //agora tendo acessado o elemento podemos executar outras funções
+            t.onclick = mudarTexto //agora perceba que colocamos o evento através do js e passamos a nova função a ser executada. Aqui não usamos () para executar a função pois ocorre o mesmo problema da função ainda n existir. Se colocar o () ele tentará executar no momento
+            
+            //Além dessa forma, podemos utilizar também o método addEventListener que também serve para associar um evento a uma função
+            t.addEventListener('mouseover', mouseOver) //passamos primeiro o evento e depois a função associada. Não utilizar o prefixo on aqui
+            t.addEventListener('mouseout', mouseOut) //mesma coisa de antes, aqui ao objeto t chamar a função, ele é passado automaticamente com argumento
+        }
+
+        //Funções que são chamadas para executar ações no evento
+        function mudarTexto(){
+            this.innerHTML = 'texto modificado' //utilizamos o this, pois quem chamou a função foi a variavel t no evento de click, então ela é automaticamente passada como argumento (como se fosse o método de um objeto)
+        }
+
+        function mouseOver(){
+            this.style.backgroundColor = 'red'
+        }
+
+        function mouseOut(){
+            this.style.backgroundColor = 'blue'
+        }
+
+    </script>
+
+</head>
+<body onload="loaded()">
+    <!-- Existem outras maneiras de acionar eventos sem precisar utilizar atributos de evento no html, podemos fazer isso direto no js
+    Entretanto para isso precisamos utilizar o atributo de evento onload no body, pois a ordem nesse caso vai importar, pois não podemos alterar o h1 lá no script q está no head sendo que ele não foi carragado ainda
+    então vamos usar o onload para ter esse controle de que as funções no script só serão executadas depois que a pagina carregar totalmente -->
+    <h1 id="titulo">Meu titulo sem alterar</h1>
+
+</body>
+</html>
