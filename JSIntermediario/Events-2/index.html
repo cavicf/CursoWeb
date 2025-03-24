@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function onOver(elemento){ //funções de evento, essa é para quando o mouse está em cima
+            elemento.style.backgroundColor = 'red' //utilizamos o atributo elemento que é o próprio elemento html passado pra função e modificamos seu objeto style
+        }
+
+        function onOut(elemento){ // essa é pra quando o mouse está fora
+            elemento.style.backgroundColor = 'cornflowerblue' //utilizamos o atributo elemento que é o próprio elemento html passado pra função e modificamos seu objeto style
+        }
+
+    </script>
+
+
+    <style>
+        img{
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        div{
+            display: inline;
+            background-color: cornflowerblue;
+            padding: 20px;
+            color: white;
+            font-size: 2rem;
+        }
+    </style>  
+
+</head>
+<body onload="console.log('pagina totalmente carregada')"> <!-- O onload dispara eventos somente quando a página for totalmente carregada, o que pode ser util em algumas situações -->
+    <!-- A imagem demonstra a lentidão do carregamento e que a pagina só é totalmente carregada quando ela aparece -->
+    <img src="https://s2-techtudo.glbimg.com/L9wb1xt7tjjL-Ocvos-Ju0tVmfc=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/q/l/TIdfl2SA6J16XZAy56Mw/canvaai.png">
+    
+    <!-- Outros atributos de evento interessantes é o onmouseout e o onmouseover que disparam eventos assim que o cursor do mouse passa por cima do elemento. Nesse caso asssociamos eles a funções que alteram a cor de fundo -->
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
+    <!-- Perceba que podemos reutilizar as mesmas funções e atributos de evento para diferentes elementos html conforme a necessidade -->
+    <p onmouseover="onOver(this)" onmouseout="onOut(this)"">Texto de teste</p>
+</body>
+</html>
