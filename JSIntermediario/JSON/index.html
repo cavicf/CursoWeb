@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //JSON é uma representação de um objeto (Notação de um objeto JavaScript)
+        //É um arquivo de textos usado para trocar dados, que são representados em pares de chave e valor (parecido com o objeto javascript)
+        //A comunicação entre sites e servidores geralmente acontece via arquivo JSON, que é apenas texto
+        //Mas que pode ser convertido em um objeto JavaScript para manipulação desses dados, assim como objetos Javascript podem converter em JSON para salvar e armazenar dados de forma estruturada em arquivos .json
+        let a = {
+            nome: 'igor',
+            nota: 8.5
+        }
+        console.log(a)
+
+        let b = JSON.stringify(a) //com o método stringfy conseguimos transformar o objeto em um texto/string para gravá-lo em um arquivo
+        console.log(b)
+
+        let a2 = '{"nome": "fabio", "nota": 7.8}'
+        let b2 = JSON.parse(a2) //e com o método parse conseguimos converter um texto em objeto JavaScript, para fazer a manipulação dos dados, acessar atributos e métodos e muito mais
+        console.log(b2)
+
+    </script>
+
+</head>
+
+<body>
+    
+</body>
+</html>
