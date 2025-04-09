@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Vamos ver como manter dados para que possamos fazer acesso, modificar e depois guardar de novo
+        //Sem que percamos eles ao fechar o navegador ou ao encerrar o programa
+        //É basicamente minupulação de arquivos e isso é feito através do objeto localstorage 
+        //Esses dados ficam armazenados na memória do navegador
+        //São salvos como string e só funcionam no mesmo dominio
+        
+        let a = {
+            nome: 'igor',
+            note: 7.3
+        }
+        
+        //SETITEM
+        localStorage.setItem('aluno', JSON.stringify(a)); //o método setItem serve para gravar dados no arquivo
+        //O primeiro argumento é uma string que será a chave e o segundo uma que será o valor correspondente daquela chave (basicamente um objeto js convertido em string)
+        //Eu crio uma chave no momento em que estou gravando no arquivo e passo o objeto convertido em string com o JSON como valor
+
+        //GETITEM
+        let item = localStorage.getItem('aluno'); //o getItem serve para resgatar dados desse arquivo, o qual podemos fazer modificações se quisermos
+        console.log(JSON.parse(item)) //e depois de recuperá-lo eu transformo ele em objeto de novo com o JSON
+        //recebe como argumento o nome da chave que queremos recuperar do arquivo e reotrna o valor correspondente 
+
+
+        //REMOVEITEM
+        localStorage.removeItem('aluno'); // e o removeItem serve para remover um dado do arquivo
+        //Recebe como argumento também o nome da chave e a apagará do arquivo
+
+        //CLEAR
+        localStorage.clear() //serve para apagar tudo que está na memória
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
