@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var numero = 0
+        var interval;
+
+        function atualizarTexto(){
+            let h = document.getElementsByTagName('h1')[0]
+            h.innerHTML += ' ' + numero;
+            numero++;
+        }
+
+        function mudarTexto(){
+            let h = document.getElementsByTagName('h1')[0]
+            h.innerHTML = 'novo titulo'
+
+            //O timer serve para criar um intervalo de tempo entre a chamada da função e a execução dela
+            setTimeout(mudarCor, 3000) //O primeiro argumento é o que será feito(geralmente uma função) e o segundo argumento é o tempo de delay em milisegundos (1 seg = 1000miliseg)
+
+            //Mas existe também um outro tipo de timer que é o intervalo
+            //Ele faz com que a execução seja feita repetidamente durante o intervalo de tempo e não só uma vez como o timeout faz
+            setInterval(atualizarTexto, 3000) //é também medido em milisegundos
+        }
+        function mudarCor(){
+            let h = document.getElementsByTagName('h1')[0]
+            h.style.color = 'blue'
+        }
+
+        function iniciar(){
+            interval = setInterval(atualizarTexto, 3000)
+        }
+
+        function parar(){
+            clearInterval(interval); //faz o intervalo parar 
+            //O clear Timeout para o timeout, podendo parar ele antes de ser executado
+        }
+    </script>
+
+</head>
+<body>
+    
+    <h1>Titulo</h1>
+    <input onclick="mudarTexto()" type="submit" value="Mudar">
+    <input onclick="iniciar()" type="submit" value="iniciar">
+    <input onclick="parar()" type="submit" value="parar">
+</body>
+</html>
