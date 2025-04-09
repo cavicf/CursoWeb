@@ -1,0 +1,43 @@
+<!-- Veremos como acessar o pai de um elemento e os filhos de um elemento -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        window.onload = function(){ //serve para que o js seja executado ao carregar a pagina
+            let d1 = document.getElementById('d1');
+            let h1 = d1.children[0] //pega o h1 que é filho do elemento pai div d1
+            console.log(d1.children[0]) //o .children irá retornar todos os elementos filho da tag html que estamos referenciando (this - d1) e ao tratar ele como array podemos selecionar elemento filho um a um
+            console.log(h1)
+            //também podemos acessar o elemento pai do elemento com o .parentelement
+            console.log(h1.parentElement) //é a div d1
+            //podemos acessar também todos os elementos do body
+            console.log(document.body.children[0].children) //primeiro acesso o documento html no body e pego seu filho d1 e depois pego os filhos dessa div q são os h1 e p
+            let titulo = document.getElementsByTagName('h1') //pego os dois h1 presentes no html
+            for(let h of titulo){
+                console.log(h)
+                h.addEventListener('click', qop) //estamos adicionando um evento à esses titulos que ao clicar chama a afunção qop pra ver quem é o pai de cada titulo
+            }
+            function qop(e){ //declaramos que a função recebe o evento de click 
+                let t = e.target //assim podemos ratrear o elemento html que disparou esse evento
+                console.log(t.parentElement) //e com isso podemos acessar o elemento pai de cada titulo a ser clicado 
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <h1>TITULO</h1>
+        <p>paragrafo qualquer</p>
+    </div>
+    <div id="d2">
+        <h1>TITULO 2</h1>
+        <p>paragrafo qualquer 2</p>
+    </div>
+</body>
+</html>
